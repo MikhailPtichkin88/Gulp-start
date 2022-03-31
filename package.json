@@ -5,10 +5,12 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
-    "sprite": "gulp svgSprive",
     "fonts": "gulp fonts",
     "dev": "gulp",
-    "build": "gulp build --build"
+    "build": "gulp build --build",
+    "zip": "gulp deployZIP --build",
+    "deploy": "gulp deployFTP --build",
+    "sprite": "gulp svgSprive"
   },
   "author": "001",
   "license": "ISC",
@@ -34,12 +36,15 @@
     "gulp-sass": "^5.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-ttf2woff2": "^4.0.1",
+    "gulp-util": "^3.0.8",
     "gulp-version-number": "^0.2.4",
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.0.6",
     "gulp-webpcss": "^1.1.1",
+    "gulp-zip": "^5.1.0",
     "sass": "^1.49.9",
     "swiper": "^8.0.7",
+    "vinyl-ftp": "^0.6.1",
     "webp-converter": "^2.2.3",
     "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"
